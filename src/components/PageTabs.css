@@ -1,0 +1,14 @@
+
+.page-tabs .nav-link {
+    cursor: pointer;
+}
+.page-tabs {
+    display: flex;
+    width: 100%;
+    margin:3%;
+    justify-content: space-around;
+}
+
+.page-tabs .nav-link.active {
+    color: blue;
+}
