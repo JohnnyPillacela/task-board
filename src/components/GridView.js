@@ -67,13 +67,13 @@ class GridView extends React.Component {
       this.moveItem(post, "", "In Progress ")
     );
     const inProgress_list = this.props.tasks.inProgress_tasks.map((post) =>
-      this.moveItem(post, " Send back ", "Request for Review ")
+      this.moveItem(post, " Send back ", "Request Review ")
     );
     const review_list = this.props.tasks.review_tasks.map((post) =>
-      this.moveItem(post, " Needs Review", "Completed ")
+      this.moveItem(post, " Send Back", "Completed ")
     );
     const done_list = this.props.tasks.done_tasks.map((post) =>
-      this.moveItem(post, " Not Done", "")
+      this.moveItem(post, " Send Back", "")
     );
 
     // const todo_list = "J";
@@ -82,24 +82,24 @@ class GridView extends React.Component {
     // const done_list = "n";
 
     return (
-      <div>
+      <div className="container grid-cont">
         <h3>
             Grid
         </h3>
-        <div className="gridView">
-          <div className="columnView todo">
+        <div className="row gridView">
+          <div className="col-3 col-cont todo">
             <h3 className="title">To-Do</h3>
             <div className="item-container">{todo_list}</div>
           </div>
-          <div className="columnView inProgress">
+          <div className="col-3 col-cont inProgress">
             <h3 className="title">In Progress</h3>
             <div className="item-container">{inProgress_list}</div>
           </div>
-          <div className="columnView review">
+          <div className="col-3 col-cont review">
             <h3 className="title">Under Review</h3>
             <div className="item-container">{review_list}</div>
           </div>
-          <div className="columnView done">
+          <div className="col-3 col-cont done">
             <h3 className="title">Done</h3>
             <div className="item-container">{done_list}</div>
           </div>
