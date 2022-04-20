@@ -1,11 +1,20 @@
+.grid-cont {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    text-align: center;
+}
+
 .gridView{
     display: flex;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .col-cont{
-    padding: 20px 10px;
-    min-width: 300px;
+    padding: 10px 10px;
+    min-width: 200px;
+    max-width: 250px;
+    /* margin: 0px auto; */
     /* flex: 0 0 20%; */
 }
 
@@ -21,9 +30,7 @@
 }
 @media (min-width:481px)  { }
 @media (max-width:641px)  { 
-    .gridView {
-        flex-direction: column;
-    }
+
 }
 @media (min-width:961px)  { 
 }
