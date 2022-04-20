@@ -1,0 +1,22 @@
+
+.page-tabs .nav-link {
+    cursor: pointer;
+}
+.page-tabs {
+    display: flex;
+}
+
+.page-tabs .nav-link.active {
+    color: blue;
+    box-shadow: 0px 0px 20px 2px #000000;
+
+}
+
+.page-tabs .nav-link {
+    border: 1px solid black;
+    margin: 5px 15px;
+}
+
+.header {
+    margin: 20px auto;
+}
