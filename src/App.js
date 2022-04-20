@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+class App extends React.Component {
+  state = {
+    view: "grid-view",
+    tasks: [],
+    errorMessage: "",
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  componentDidMount() {
+    this.getData();
+  }
+
+  getData() {
+    axios
+      .get("http://my-json-server.typicode.com/bnissen24/project2DB/posts")
+      .then((response) => {
+        this.setState({ tasks: response.data });
+      })
+      .catch((error) => {
+        this.setState({ errorMessage: error.message });
+      });
+  }
 }
 
 export default App;
