@@ -6,6 +6,7 @@ import PageTabs from "./PageTabs";
 import GridView from "./GridView";
 import AddTaskView from "./AddTaskView";
 import ListView from "./ListView";
+import '../styles/App.css';
 class App extends React.Component {
   state = {
     view: "grid-view",
@@ -59,7 +60,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container app">
         <BrowserRouter>
           <PageTabs />
           <div>

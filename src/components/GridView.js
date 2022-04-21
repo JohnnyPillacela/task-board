@@ -76,33 +76,27 @@ class GridView extends React.Component {
       this.moveItem(post, " Send Back", "")
     );
 
-    // const todo_list = "J";
-    // const inProgress_list = "o";
-    // const review_list = "h";
-    // const done_list = "n";
-
     return (
-      <div className="container grid-cont">
-        <h3>
-            Grid
-        </h3>
+      <div className="container grid-view-cont">
+        <h3>Task Board</h3>
+        <hr className="hr"/>
         <div className="row gridView">
-          <div className="col-3 col-cont todo">
-            <h3 className="title">To-Do</h3>
-            <div className="item-container">{todo_list}</div>
-          </div>
-          <div className="col-3 col-cont inProgress">
-            <h3 className="title">In Progress</h3>
-            <div className="item-container">{inProgress_list}</div>
-          </div>
-          <div className="col-3 col-cont review">
-            <h3 className="title">Under Review</h3>
-            <div className="item-container">{review_list}</div>
-          </div>
-          <div className="col-3 col-cont done">
-            <h3 className="title">Done</h3>
-            <div className="item-container">{done_list}</div>
-          </div>
+            <div className="col-3 col-cont todo">
+              <h3 className="title">To-Do</h3>
+              <div className="item-container">{todo_list}</div>
+            </div>
+            <div className="col-3 col-cont inProgress">
+              <h3 className="title">In Progress</h3>
+              <div className="item-container">{inProgress_list}</div>
+            </div>
+            <div className="col-3 col-cont review">
+              <h3 className="title">Under Review</h3>
+              <div className="item-container">{review_list}</div>
+            </div>
+            <div className="col-3 col-cont done">
+              <h3 className="title">Done</h3>
+              <div className="item-container">{done_list}</div>
+            </div>
         </div>
       </div>
     );

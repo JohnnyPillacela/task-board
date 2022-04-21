@@ -3,7 +3,11 @@
     cursor: pointer;
 }
 .page-tabs {
-    display: flex;
+    margin: 0px auto;
+}
+
+.nav-item {
+    margin: 0px auto;
 }
 
 .page-tabs .nav-link.active {
